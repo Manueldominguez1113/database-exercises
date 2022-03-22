@@ -16,6 +16,5 @@ USE employees;
 
 -- For your query of employees born on Christmas and hired in the 90s, use datediff() to find how many days they have been working at the company (Hint: You might also need to use now() or curdate()).
 
-SELECT *, DATEDIFF(NOW(), hire_date) FROM employees WHERE YEAR(hire_date) BETWEEN 1990 AND 1999 AND MONTH(birth_date) = '12' AND DAY(birth_date) = '25' ORDER BY DATEDIFF(NOW(), hire_date);
-
+ SELECT *, DATEDIFF(NOW(), hire_date) FROM employees WHERE YEAR(hire_date) BETWEEN 1990 AND 1999 AND MONTH(birth_date) = '12' AND DAY(birth_date) = '25' ORDER BY DATEDIFF(NOW(), hire_date);
 -- Alselm Cappello, has been with the company the longest, at 11767 days
