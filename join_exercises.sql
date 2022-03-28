@@ -46,4 +46,4 @@ JOIN dept_emp AS de ON de.emp_no = emp.emp_no
 JOIN departments AS dept ON dept.dept_no = de.dept_no
 JOIN dept_manager AS dm ON dm.dept_no = dept.dept_no
 JOIN employees as manager ON manager.emp_no = dm.emp_no
-WHERE dm.to_date> NOW();
+WHERE dm.to_date> NOW() AND de.to_date > NOW();
